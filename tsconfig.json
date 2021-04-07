@@ -4,35 +4,36 @@
 
     /* Basic Options */
     // "incremental": true,                         /* Enable incremental compilation */
-    "target": "es5",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
-    "module": "commonjs",                           /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
-    // "lib": [],                                   /* Specify library files to be included in the compilation. */
-    // "allowJs": true,                             /* Allow javascript files to be compiled. */
-    // "checkJs": true,                             /* Report errors in .js files. */
+    "target": "es5",                                /* 用来指定ts被编译为的ES的版本 Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "module": "es2015",                             /* 指定要使用的模块化的规范 Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    // "lib": [],                                   /* 用来指定项目中要使用的库 Specify library files to be included in the compilation. */
+    // "allowJs": true,                             /* 是否对js文件进行编译，默认是false Allow javascript files to be compiled. */
+    // "checkJs": true,                             /* 是否检查js代码是否符合语法规范，默认是false Report errors in .js files. */
     // "jsx": "preserve",                           /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */
     // "declaration": true,                         /* Generates corresponding '.d.ts' file. */
     // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                           /* Generates corresponding '.map' file. */
-    // "outFile": "./",                             /* Concatenate and emit output to single file. */
-    "outDir": "./js",                              /* Redirect output structure to the directory. */
+    // "outFile": "./",                             /* 设置outFile后，所有的全局作用域中的代码会合并到同一个文件中 Concatenate and emit output to single file. */
+    "outDir": "./js",                               /* 用来指定编译后文件所在的目录 Redirect output structure to the directory. */
     // "rootDir": "./",                             /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                           /* Enable project compilation */
     // "tsBuildInfoFile": "./",                     /* Specify file to store incremental compilation information */
-    // "removeComments": true,                      /* Do not emit comments to output. */
-    // "noEmit": true,                              /* Do not emit outputs. */
+    // "removeComments": true,                      /* 是否移除注释 Do not emit comments to output. */
+    // "noEmit": true,                              /* 不生成编译后的文件 Do not emit outputs. */
+    // "noEmitOnError": true                        /* 当有错误时不生成编译后的文件 */
     // "importHelpers": true,                       /* Import emit helpers from 'tslib'. */
     // "downlevelIteration": true,                  /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
     // "isolatedModules": true,                     /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* Strict Type-Checking Options */
-    "strict": true,                                 /* Enable all strict type-checking options. */
-    // "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
-    // "strictNullChecks": true,                    /* Enable strict null checks. */
+    "strict": true,                                 /* 所有严格检查的总开关 Enable all strict type-checking options. */
+    // "noImplicitAny": true,                       /* 不允许隐式的any类型 Raise error on expressions and declarations with an implied 'any' type. */
+    // "strictNullChecks": true,                    /* 严格的检查空值 Enable strict null checks. */
     // "strictFunctionTypes": true,                 /* Enable strict checking of function types. */
     // "strictBindCallApply": true,                 /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
     // "strictPropertyInitialization": true,        /* Enable strict checking of property initialization in classes. */
-    // "noImplicitThis": true,                      /* Raise error on 'this' expressions with an implied 'any' type. */
-    // "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
+    // "noImplicitThis": true,                      /* 不允许不明确类型的this Raise error on 'this' expressions with an implied 'any' type. */
+    // "alwaysStrict": true,                        /* 用来设置编译后的文件是否使用严格模式，默认是false Parse in strict mode and emit "use strict" for each source file. */
 
     /* Additional Checks */
     // "noUnusedLocals": true,                      /* Report errors on unused locals. */
@@ -67,5 +68,7 @@
     /* Advanced Options */
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  // "include": [],                                 /* 用来指定哪些ts文件需要被编译  路径：**表示任意目录，*表示任意文件 */
+  // "exclude": [],                                 /* 不需要被编译的文件目录 比如：【"node_modules"，"bower_components", "jspm_packages"】 */
 }
